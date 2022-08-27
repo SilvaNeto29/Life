@@ -27,7 +27,17 @@ Cmp.RelFuncionario = function() {
                     {
                         text: 'Nome',
                         field: 'nome'
-                    }, {
+                    }, 
+                    {
+                        text: 'CPF',
+                        field: 'cpf',
+                        width: 200 
+                    },
+                    {
+                        text: 'Telefone',
+                        field: 'tel',
+                        width: 200
+                    },{
                         text: 'Função',
                         field: 'funcao',
                         width: 200

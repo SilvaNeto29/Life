@@ -43,7 +43,8 @@ class Database
                     PDO::ATTR_AUTOCOMMIT => 0
                 )
             );
-        } catch (PDOException $e) {
+        } 
+        catch (PDOException $e) {
             return false;
         }
 

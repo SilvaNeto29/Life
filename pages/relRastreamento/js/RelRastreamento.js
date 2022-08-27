@@ -11,20 +11,6 @@ Cmp.RelVeiculo = function() {
                 width: '200px'
             });
 
-            Cmp.createInput({
-                id: 'divInpuNome',
-                renderTo: '#divInputNome',
-                label: 'Nome do funcionário',
-                width: '200px'
-            });
-
-            Cmp.createInput({
-                id: 'divInputData',
-                renderTo: '#divInputData',
-                label: 'Data do registro',
-                width: '200px'
-            });
-
             Cmp.createButton({
                 id: 'btnBuscar',
                 renderTo: '#divBtnConsultar',
@@ -42,15 +28,15 @@ Cmp.RelVeiculo = function() {
                         text: 'Nome',
                         field: 'nome',
                     }, {
-                        text: 'Placa',
+                        text: 'Teste1',
                         field: 'placa',
                         width: 150
                     }, {
-                        text: 'Vel. Max.',
+                        text: 'Teste2',
                         field: 'vel_maxima',
                         width: 150
                     }, {
-                        text: 'Tp. Veículo',
+                        text: 'Teste3',
                         field: 'tp_veiculo',
                         width: 200
                     }
