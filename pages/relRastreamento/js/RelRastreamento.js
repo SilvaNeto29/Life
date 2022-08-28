@@ -11,6 +11,20 @@ Cmp.RelVeiculo = function() {
                 width: '200px'
             });
 
+            Cmp.createInput({
+                id: 'inputFuncionario',
+                renderTo: '#divInputFuncionario',
+                label: 'Nome do funcionário',
+                width: '200px'
+            });
+
+            Cmp.createInput({
+                id: 'inputReg',
+                renderTo: '#divInputReg',
+                label: 'Data do registro',
+                width: '200px'
+            });
+
             Cmp.createButton({
                 id: 'btnBuscar',
                 renderTo: '#divBtnConsultar',
@@ -25,20 +39,46 @@ Cmp.RelVeiculo = function() {
                 renderTo: '#divCmpGridVeiculo',
                 header: [
                     {
-                        text: 'Nome',
-                        field: 'nome',
+                        text: 'Placa',
+                        field: 'PLACA',
+                        align: "center",
+                        width: 70
                     }, {
-                        text: 'Teste1',
-                        field: 'placa',
-                        width: 150
+                        text: 'Funcionário',
+                        field: 'NOME',
+                        align: "left",
+                        width: 150,
+                     }, {
+                        text: 'DT Registro',
+                        field: 'DTHR',
+                        width: 150,
+                        "text-align": "center",
+                        align: "center",
                     }, {
-                        text: 'Teste2',
-                        field: 'vel_maxima',
-                        width: 150
-                    }, {
-                        text: 'Teste3',
-                        field: 'tp_veiculo',
-                        width: 200
+                        text: 'Vl. Max',
+                        field: 'VEL_MAXIMA',
+                        // width: 100,
+                        align: "center"
+                    },{
+                        text: 'Vl. Regis.',
+                        field: 'VLREGISTRADA',
+                        // width: 100,
+                        align: "center"
+                    },{
+                        text: 'Diff. Vel.',
+                        field: 'PORCENTAGEM',
+                        // width: 70,
+                        align: "center"
+                    },{
+                        text: 'Latitude',
+                        field: 'LATITUDE',
+                        // width: 100,
+                        align: "center"
+                    },{
+                        text: 'Longetude',
+                        field: 'LONGETUDE',
+                        width: 100,
+                        align: "center"
                     }
                 ]
             });
@@ -48,9 +88,10 @@ Cmp.RelVeiculo = function() {
             Cmp.showLoading();
 
             Cmp.request({
-                url: 'index.php?mdl=relVeiculo&file=ds_veiculo.php',
+                url: 'index.php?mdl=relRastreamento&file=ds_rastreamento.php',
                 params: {
-                    placa: Cmp.get('inputPlaca').getValue()
+                    placa: Cmp.get('inputPlaca').getValue(),
+                    nome: Cmp.get('inputFuncionario').getValue()
                 },
                 success: function(res) {
                     Cmp.hideLoading();

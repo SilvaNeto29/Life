@@ -26,21 +26,25 @@ Cmp.RelFuncionario = function() {
                 header: [
                     {
                         text: 'Nome',
-                        field: 'nome'
+                        field: 'nome',
+                        align: "left"
                     }, 
                     {
                         text: 'CPF',
                         field: 'cpf',
-                        width: 200 
+                        width: 200,
+                        align: "center"
                     },
                     {
                         text: 'Telefone',
                         field: 'tel',
-                        width: 200
+                        width: 200,
+                        align: "center"
                     },{
                         text: 'Função',
                         field: 'funcao',
-                        width: 200
+                        width: 200,
+                        align: "left"
                     }
                 ]
             });

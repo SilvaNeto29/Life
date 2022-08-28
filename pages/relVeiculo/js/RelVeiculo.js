@@ -34,6 +34,7 @@ Cmp.RelVeiculo = function() {
                 }
             });
 
+
             Cmp.createGrid({
                 id: 'gridDadosVeiculos',
                 renderTo: '#divCmpGridVeiculo',
@@ -41,18 +42,23 @@ Cmp.RelVeiculo = function() {
                     {
                         text: 'Nome',
                         field: 'nome',
+                        align: "left",
+                        width: 200,
                     }, {
                         text: 'Placa',
                         field: 'placa',
-                        width: 150
+                        width: 90,
+                        align: "center",
                     }, {
                         text: 'Vel. Max.',
                         field: 'vel_maxima',
-                        width: 150
+                        width: 90,
+                        align: "center",
                     }, {
                         text: 'Tp. Veículo',
                         field: 'tp_veiculo',
-                        width: 200
+                        width: 90,
+                        align: "left",
                     }
                 ]
             });

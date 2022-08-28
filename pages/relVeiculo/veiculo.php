@@ -5,6 +5,7 @@
             <div id="divInputNome"></div>
             <div id="divInputData"></div>
             <div id="divBtnConsultar"></div>
+            <div id="divBtnRel"><input type="submit" value="Imprimir PDF" id="pdf" class="btn btn-primary"></input></div>
         </div>
 
         <div id="divCmpGridVeiculo"></div>
@@ -16,20 +17,21 @@
         padding: 32px;
     }
 
-    #divInputPlaca, #divInpuNome, #divInputData {
-        margin-left: 20px;
-        margin-right: 20px;
-     }  
-
     #divBtnConsultar {
-        margin-left: 30px;
-        margin-right: 20px;
+        margin-left: 23px;
+        margin-right: 10px;
         margin-top: 30px;
     }
 
-    label{
-        margin-left: 20px;
-        margin-right: 20px;  
+    .form-group{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #pdf{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
     }
 
     #divCmpGridVeiculo {
@@ -40,8 +42,19 @@
 
     .jumbotron{
         display: flex ;
-        vertical-align: center;
+        vertical-align: center;    
     }
+
+    #nome-0,#tp_veiculo-3{
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #placa-1,#vel_maxima-2{
+        text-align: center; 
+    }
+
+
 </style>
 
 <script type="text/javascript">

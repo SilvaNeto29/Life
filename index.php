@@ -24,7 +24,11 @@
                     require('pages/relFuncionario/funcionario.php');
                     JSRequire('relFuncionario', 'RelFuncionario.js');
                     break;
-    
+                    
+                case 'relRastreamento':
+                    require('pages/relRastreamento/rastreamento.php');
+                    JSRequire('relRastreamento', 'relRastreamento.js');
+                    break;
             }
     
         } else {
