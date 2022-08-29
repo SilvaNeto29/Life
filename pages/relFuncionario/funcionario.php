@@ -2,8 +2,8 @@
     <div class="col-12">
         <div class="jumbotron">
             <div id="divInputNome"></div>
-            <div id="divBtnConsultar"></div>
-            <div id="divBtnRel"><input type="submit" value="Imprimir PDF" id="pdf" class="btn btn-primary"></input></div>
+            <div id="divInputCpf"></div>
+            <div id="divBtnConsultar" ></div>
         </div>
 
         <div id="divCmpGridFuncionario"></div>
@@ -22,7 +22,7 @@
 
     #divBtnConsultar {
         margin-top: 32px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     #divCmpGridFuncionario {
@@ -34,6 +34,7 @@
     .jumbotron{
         display: flex ;
         vertical-align: center;    
+        background-color:azure;
     }
 
     .form-group{
@@ -41,11 +42,6 @@
         margin-right: 30px;
     }
 
-    #pdf{
-        margin-left: 36px;
-        margin-right: 30px;
-        margin-top: 32px;  
-    }
 
     #nome-0,#funcao-3{
         text-align: left;
@@ -55,6 +51,11 @@
     #cpf-1,#tel-2{
         text-align: center;
     }
+
+    body{
+        background-color: #F0F0F0;
+    }
+
 
 </style>
 

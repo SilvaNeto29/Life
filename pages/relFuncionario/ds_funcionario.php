@@ -4,7 +4,15 @@ $where = '';
 
 if(!empty($_REQUEST['nome'])) {
     $where = "WHERE f.nome LIKE '%{$_REQUEST['nome']}%'";
+} 
+
+if(!empty($_REQUEST['cpf'])) {
+    $_REQUEST['cpf'] = str_replace('-','',str_replace('.', '',$_REQUEST['cpf']));
+    $where = "WHERE f.CPF LIKE '%{$_REQUEST['cpf']}%'";
 }
+
+
+
 
 $db = new Database();
 

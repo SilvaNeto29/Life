@@ -1,5 +1,6 @@
 body {
     min-height: 75rem;
+    background-color: #F0F0F0;
 }
 
 #loadingWindow .modal-content {
@@ -19,4 +20,5 @@ font-size: 30px;
 
 #homejum{
     margin-top: 10rem;
+    background-color:azure;
 }

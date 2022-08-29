@@ -17,6 +17,8 @@ var Cmp = {
             return;
         }
 
+
+        
         var params = typeof config.params == 'object' ? config.params : {};
 
         $.ajax({

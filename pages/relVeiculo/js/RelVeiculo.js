@@ -11,20 +11,6 @@ Cmp.RelVeiculo = function() {
                 width: '200px'
             });
 
-            Cmp.createInput({
-                id: 'divInpuNome',
-                renderTo: '#divInputNome',
-                label: 'Nome do funcionário',
-                width: '200px'
-            });
-
-            Cmp.createInput({
-                id: 'divInputData',
-                renderTo: '#divInputData',
-                label: 'Data do registro',
-                width: '200px'
-            });
-
             Cmp.createButton({
                 id: 'btnBuscar',
                 renderTo: '#divBtnConsultar',

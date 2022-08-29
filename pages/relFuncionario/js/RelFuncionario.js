@@ -11,6 +11,13 @@ Cmp.RelFuncionario = function() {
                 width: '300px'
             });
 
+            Cmp.createInput({
+                id: 'InputCpf',
+                renderTo: '#divInputCpf',
+                label: 'CPF do funcionário',
+                width: '300px'
+            });
+
             Cmp.createButton({
                 id: 'btnBuscar',
                 renderTo: '#divBtnConsultar',
@@ -56,7 +63,8 @@ Cmp.RelFuncionario = function() {
             Cmp.request({
                 url: 'index.php?mdl=relFuncionario&file=ds_funcionario.php',
                 params: {
-                    nome: Cmp.get('inputNome').getValue()
+                    nome: Cmp.get('inputNome').getValue(),
+                    cpf: Cmp.get('InputCpf').getValue(),
                 },
                 success: function(res) {
                     Cmp.hideLoading();

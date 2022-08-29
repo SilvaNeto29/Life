@@ -21,7 +21,7 @@ Cmp.RelVeiculo = function() {
             Cmp.createInput({
                 id: 'inputReg',
                 renderTo: '#divInputReg',
-                label: 'Data do registro',
+                label: 'Dt registro (DD/MM/YYYY)',
                 width: '200px'
             });
 
@@ -52,7 +52,6 @@ Cmp.RelVeiculo = function() {
                         text: 'DT Registro',
                         field: 'DTHR',
                         width: 150,
-                        "text-align": "center",
                         align: "center",
                     }, {
                         text: 'Vl. Max',
@@ -91,7 +90,8 @@ Cmp.RelVeiculo = function() {
                 url: 'index.php?mdl=relRastreamento&file=ds_rastreamento.php',
                 params: {
                     placa: Cmp.get('inputPlaca').getValue(),
-                    nome: Cmp.get('inputFuncionario').getValue()
+                    nome: Cmp.get('inputFuncionario').getValue(),
+                    data: Cmp.get('inputReg').getValue()
                 },
                 success: function(res) {
                     Cmp.hideLoading();
